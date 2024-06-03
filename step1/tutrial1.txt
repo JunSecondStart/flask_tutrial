@@ -1,0 +1,6 @@
+pip install flask
+python --version
+python
+import flask
+flask.__version__
+exit()

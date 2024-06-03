@@ -1,0 +1,37 @@
+https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/tutorial/factory.html#run-the-application
+をキャッチアップ
+
+仮想化モード
+python3 -m venv venv
+ . venv/bin/activate
+
+ 上記の後に、
+ pip install flask
+
+ で、作成したディレクトリ以下にライブラリを追加。
+
+
+ touch __init__.py
+ ここで、実行するディレクトリがflaskrの場合、
+ ./../flaskrの位置で、下記を実行する。
+ flask --app flaskr --debug run
+
+http://127.0.0.1:5000
+へアクセスし、
+Hello, World!
+表示で成功。
+ただし、
+
+    @app.route("/hello")
+    def hello():
+        return "Hello, World!"
+
+の
+    @app.route("/hello")
+が、
+    @app.route("/")
+になっているかcheckし、
+http://127.0.0.1:5000
+か、
+http://127.0.0.1:5000/hello
+かをきちんと確認しておく。
