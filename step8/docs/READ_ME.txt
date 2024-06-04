@@ -32,3 +32,8 @@ touch create.html
 vi create.html
 :wq
 
+
+
+
+https://qiita.com/msrks/items/d9c327dd81749ec01d1d
+
