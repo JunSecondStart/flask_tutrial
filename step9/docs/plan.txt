@@ -1,0 +1,32 @@
+1. **実践的なプロジェクトの開発**
+   - 自分で考えた小規模なAPIプロジェクトを開始してみてください。
+   例えば、天気情報、株価情報、あるいは公共交通機関の時刻表を提供するAPIなど、
+   実際に役立つ情報を扱うAPIを開発してみるのが良いでしょう。
+
+広瀬さん：テキストを入力→文章から感情の表現を読み取り、教えてくれるアプリ。
+freeのpythonライブラリを用いて、無料のサイト（国外）でdeploy
+
+※ グラフ描画
+
+Matplotlib/Seaborn
+
+Matplotlib
+公式ページ
+Githubページ
+
+Seaborn
+公式ページ
+Githubページ
+
+pip install matplotlib
+vi matplotlib.py 
+:wq
+python matplotlib.py (error)
+ModuleNotFoundError: No module named 'matplotlib.pyplot'; 'matplotlib' is not a package
+pip list | grep matplotlib
+python -c "import matplotlib.pyplot as plt"  #import
+chatGPT,利用しているpython,pipが、別の箇所のものを利用している可能性あり。
+python3を利用
+mv matplotlib.py matplotlib_sample.py
+python matplotlib_sample.py
+moduleとファイル名が同名で、間違って読み込んだ模様。ファイルの方を~_sampleをつけることで、回避OK.
