@@ -1,0 +1,7 @@
+cd dev/flaskproject/step9
+. flaskr/venv/bin/activate
+
+flask --version
+
+flask --app flaskr run
+
